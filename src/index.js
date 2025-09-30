@@ -1,15 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Mycomponent from './Mycomponent';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+// import App from './App';
+import Mycomponent from "./Mycomponent";
+import MyCalc from "./MyCalc";
+import EventBasic from "./EventBasic";
+import StateBasic from "./StateBasic";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-    <Mycomponent />
+    <Mycomponent myName="yuma" />
+    <MyCalc num1={5} num2={10} />
+    <EventBasic />
+    <StateBasic init={0} />
+    <StateBasic init={0} />
   </React.StrictMode>
 );
 
