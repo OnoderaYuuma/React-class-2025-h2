@@ -1,22 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 // import App from './App';
-import Mycomponent from "./Mycomponent";
-import MyCalc from "./MyCalc";
-import EventBasic from "./EventBasic";
-import StateBasic from "./StateBasic";
-import reportWebVitals from "./reportWebVitals";
+import Mycomponent from './Mycomponent';
+import MyCalc from './MyCalc';
+import EventBasic from './EventBasic';
+import StateBasic from './StateBasic';
+import StateEffect from './StateEffect';
+import StateParent from './StateParent';
+import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Mycomponent myName="yuma" />
-    <MyCalc num1={5} num2={10} />
-    <EventBasic />
-    <StateBasic init={0} />
-    <StateBasic init={0} />
-  </React.StrictMode>
+    <React.StrictMode>
+        <Mycomponent myName="yuma" />
+        <MyCalc num1={5} num2={10} />
+        <EventBasic />
+        <StateBasic init={0} />
+        <StateBasic init={0} />
+        <StateEffect init={0} />
+        <StateParent />
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
