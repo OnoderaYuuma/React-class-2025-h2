@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
+import FormTextarea from './FormTextarea';
+import FormSelect from './FormSelect';
+import FormRadio from './FormRadio';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <p>Hello, world!</p>
+        <FormTextarea />
+        <FormSelect />
+        <FormRadio />
     </React.StrictMode>
 );
 
